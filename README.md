@@ -1,5 +1,5 @@
 # Pyautogui
-Automação de processos com python
+# Automação de processos com python
 
 Aprendi a realizar uma automação, que preenche produtos de uma planilha em um banco de dados de uma empresa fictícia, utilizando a biblioteca pyautogui.
 A automação abre o chrome
@@ -11,7 +11,7 @@ import pyautogui
 import time
 import pandas
 
-#1 passo: Entrar no sistema da empresa
+# 1. passo: Entrar no sistema da empresa
 pyautogui.press("win")
 pyautogui.PAUSE = 0.2
 pyautogui.write("chrome")
@@ -33,11 +33,11 @@ pyautogui.write("123456")
 pyautogui.press("tab")
 pyautogui.press("enter")
                
-#3. passo: importar a base de dados do produto
+# 3. passo: importar a base de dados do produto
 tabela = pandas.read_csv("produtos.csv")
 print(tabela)
 
-#4 Passo: Cadastrar um produto
+# 4. Passo: Cadastrar um produto
 for linha in tabela.index:
     pyautogui.click(x = 691, y = 351)
     codigo = tabela.loc[linha,"codigo"]
