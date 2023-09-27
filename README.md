@@ -1,10 +1,11 @@
-# Python
+# Pyautogui
 Automação de processos com python
 
-Aprendi a realizar uma automação, que preenche produtos de uma planilha em um banco de dados de uma empresa fictícia.
+Aprendi a realizar uma automação, que preenche produtos de uma planilha em um banco de dados de uma empresa fictícia, utilizando a biblioteca pyautogui.
 A automação abre o chrome
 Realiza login e senha
-Localiza planilha.csv e inclui os itens em um banco de dados
+Localiza planilha.csv e inclui os itens em um banco de dados. 
+
 
 import pyautogui
 import time
